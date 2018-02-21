@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hm.inheritence.Product" abstract="true" >
+		<id name="productId" type="int" column="product_id">
+			<generator class="increment" />
+		</id>
+
+		<property name="productName" column="product_name" type="string" />
+		<property name="productDesc" column="product_desc" type="string" />
+		<property name="productPrice" column="product_price" type="double" />
+
+		<joined-subclass name="com.hm.inheritence.Mobile">
+			<key column="mobile_id"/>
+			<property name="type" type="string" />
+			<property name="os"/>
+			<property name="connectivity" type="string" length="20" />
+		</joined-subclass>
+	
+		<joined-subclass name="com.hm.inheritence.Television">
+		<property name="size"/>
+			<property name="screenType"/>
+			<property name="resolution"/>
+		</joined-subclass>
+	
+	
+
+	</class>
+
+</hibernate-mapping>

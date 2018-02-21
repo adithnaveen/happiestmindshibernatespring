@@ -1,0 +1,9 @@
+package com.hm.beans;
+
+public class Employee {
+	private int empId; 
+	private String empName; 
+	private String empEmail;
+	private double empSal; 
+	
+}

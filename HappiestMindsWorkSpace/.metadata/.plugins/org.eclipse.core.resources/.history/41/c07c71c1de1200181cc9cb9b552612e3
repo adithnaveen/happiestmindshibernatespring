@@ -1,0 +1,9 @@
+package com.hm.association;
+
+public class OneToManyImpl {
+	public static void main(String[] args) {
+		OneToManyImpl otm = new OneToManyImpl(); 
+		
+		
+	}
+}

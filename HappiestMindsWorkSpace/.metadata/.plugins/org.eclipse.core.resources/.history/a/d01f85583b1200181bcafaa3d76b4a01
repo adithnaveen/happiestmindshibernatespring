@@ -1,0 +1,7 @@
+package com.hm.bl;
+
+public class CriteriaImpl {
+	public static void main(String[] args) {
+		
+	}
+}

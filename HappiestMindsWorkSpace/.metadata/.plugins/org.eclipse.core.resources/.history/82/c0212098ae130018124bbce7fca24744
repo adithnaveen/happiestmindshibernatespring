@@ -1,0 +1,35 @@
+package com.hm.collections;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class MyCollection {
+	private List<QuestionBank> questionBank; 
+	private Set<AddressSet> addressSet; 
+	private AccountMap accountMap; 
+	
+	
+	public List<QuestionBank> getQuestionBank() {
+		return questionBank;
+	}
+	public void setQuestionBank(List<QuestionBank> questionBank) {
+		this.questionBank = questionBank;
+	}
+	public Set<AddressSet> getAddressSet() {
+		return addressSet;
+	}
+	public void setAddressSet(Set<AddressSet> addressSet) {
+		this.addressSet = addressSet;
+	}
+	public Map getAccountMap() {
+		return accountMap;
+	}
+	public void setAccountMap(Map accountMap) {
+		this.accountMap = accountMap;
+	} 
+	
+	
+	
+	
+}

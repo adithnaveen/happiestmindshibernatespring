@@ -1,0 +1,5 @@
+package com.hm.basicannotation;
+
+public class AppConfig {
+
+}

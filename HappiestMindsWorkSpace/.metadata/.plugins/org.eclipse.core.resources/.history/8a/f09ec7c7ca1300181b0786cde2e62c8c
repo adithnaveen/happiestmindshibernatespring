@@ -1,0 +1,21 @@
+package com.hm.aop;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+@Aspect
+public class LoggingAspect {
+	
+	
+	 @Before("execution(public double getBalance())")
+	 public void logginBeforeAspect() {
+			System.out.println("Logging Aspect before Called for get * >>>>>");
+		}
+	
+// 	@Before("execution(public double com.hm.bl.CAAccount.showBalance())")
+	
+	@Before(value="execution(public * get*())")
+	public void logginBeforeAspect() {
+		System.out.println("Logging Aspect before Called for get * >>>>>");
+	}
+}

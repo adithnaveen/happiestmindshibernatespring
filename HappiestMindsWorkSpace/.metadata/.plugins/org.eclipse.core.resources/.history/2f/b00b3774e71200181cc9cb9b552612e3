@@ -1,0 +1,18 @@
+package com.hm.annotations;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity(name="AEmployee")
+public class Employee {
+	
+	@Id
+	@GeneratedValue
+	private int empId;
+	
+	@Column(name="emp_name", nullable=false, length=20)
+	private String empName; 
+	private double empSal;
+}

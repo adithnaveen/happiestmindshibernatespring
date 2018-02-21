@@ -1,0 +1,52 @@
+package com.hm.basics;
+
+public class DefaultHello implements IHelloService{
+
+	private String name; 
+	private String city; 
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String sayHello() {
+		return this.sayHello(name, city);
+	}
+
+	public String sayHello(String name, String city) {
+		String myString[] ={
+				"Hey %s How are you in %s", 
+				"Good Morning %s, heard You are in %s", 
+				"Hey %s, there is something good in city %s"
+		};
+		
+		int randNumber = (int) (Math.random()*3);
+		return String.format(myString[randNumber],name, city);
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

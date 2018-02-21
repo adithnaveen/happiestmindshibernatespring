@@ -1,0 +1,11 @@
+package com.hm.db;
+
+import javax.sql.DataSource;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class StudentDAO {
+	private DataSource dataSource;
+	private JdbcTemplate jdbcTemplateObject; 
+	
+}

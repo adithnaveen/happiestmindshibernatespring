@@ -1,0 +1,11 @@
+package com.hm.collections;
+
+import java.util.List;
+
+public class QuestionBank {
+	private String quesion; 
+	private List<String> options; 
+	
+	
+	
+}

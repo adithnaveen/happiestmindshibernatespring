@@ -1,0 +1,26 @@
+package com.hm.annotations;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.SecondaryTable;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Master_customer")
+@SecondaryTable(name="personal_customer")
+public class Customer {
+	@Id
+	@GeneratedValue
+	private int custId;
+	
+	@Column(name="cust_name", nullable=false)
+	private String custName; 
+	private double custIncome; 
+	private String email; 
+	private String insured; 
+	private boolean isAlive; 
+	
+	
+}

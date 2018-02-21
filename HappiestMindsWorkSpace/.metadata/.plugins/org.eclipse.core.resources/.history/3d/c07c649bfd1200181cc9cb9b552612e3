@@ -1,0 +1,15 @@
+package com.hm.annotations.inheritence;
+
+import org.hibernate.SessionFactory;
+
+import com.hm.hibernate.util.HibernateUtil;
+
+public class InheClient {
+	static SessionFactory sessionFactory; 
+	public static void main(String[] args) {
+		sessionFactory  = HibernateUtil.getFactoryAnnotation
+			(Project.class, Task.class, Module.class);
+		
+		
+	}
+}

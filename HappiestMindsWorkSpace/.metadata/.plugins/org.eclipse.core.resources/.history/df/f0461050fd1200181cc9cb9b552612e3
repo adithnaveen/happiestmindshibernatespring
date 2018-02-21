@@ -1,0 +1,7 @@
+package com.hm.annotations.inheritence;
+
+public class InheClient {
+	public static void main(String[] args) {
+		
+	}
+}

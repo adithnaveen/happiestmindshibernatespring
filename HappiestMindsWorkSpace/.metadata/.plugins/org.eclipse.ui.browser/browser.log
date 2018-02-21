@@ -1,0 +1,40 @@
+
+Feb 17, 2018 17:40:15.02 NEW SESSION
+Feb 17, 2018 17:40:15.02 1518869415026	addons.webextension.helper-sig@savefrom.net	WARN	Please specify whether you want browser_style or not in your browser_action options.
+Feb 17, 2018 17:46:48.22 1518869808221	addons.xpi	WARN	Add-on sbv4-gradual-rollout@mozilla.com is missing bootstrap method uninstall
+Feb 17, 2018 17:50:47.43 1518870047438	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+Feb 17, 2018 17:50:47.44 1518870047445	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+Feb 17, 2018 17:50:47.57 1518870047579	addons.update-checker	WARN	Update manifest for aushelper@mozilla.org did not contain an updates property
+Feb 17, 2018 17:50:47.72 1518870047720	addons.update-checker	WARN	Update manifest for webcompat@mozilla.org did not contain an updates property
+Feb 17, 2018 17:50:47.76 1518870047762	addons.update-checker	WARN	Update manifest for clicktoplay-rollout@mozilla.org did not contain an updates property
+Feb 17, 2018 17:50:47.78 1518870047789	addons.update-checker	WARN	Update manifest for followonsearch@mozilla.com did not contain an updates property
+Feb 17, 2018 17:50:47.90 1518870047902	addons.update-checker	WARN	Update manifest for activity-stream@mozilla.org did not contain an updates property
+Feb 17, 2018 17:50:47.96 1518870047970	addons.update-checker	WARN	Update manifest for formautofill@mozilla.org did not contain an updates property
+Feb 17, 2018 17:50:47.99 1518870047994	addons.update-checker	WARN	Update manifest for onboarding@mozilla.org did not contain an updates property
+Feb 17, 2018 17:50:48.10 1518870048103	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Feb 17, 2018 17:50:55.27 1518870055274	addons.xpi	WARN	Please specify whether you want browser_style or not in your options_ui options.
+Feb 17, 2018 17:50:56.00 1518870056002	addons.xpi	WARN	Failed to remove temporary file C:\Users\Naveen\AppData\Local\Temp\tmp-0dm.xpi for addon https://download.sf-helper.com/mozilla/helper-sig_7.57.xpi: [Exception... "Component returned failure code: 0x80520015 (NS_ERROR_FILE_ACCESS_DENIED) [nsIFile.remove]"  nsresult: "0x80520015 (NS_ERROR_FILE_ACCESS_DENIED)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: removeTemporaryFile :: line 1596"  data: no] Stack trace: removeTemporaryFile()@resource://gre/modules/addons/XPIInstall.jsm:1596 < startInstall/<()@resource://gre/modules/addons/XPIInstall.jsm:1964
+Feb 17, 2018 17:50:56.51 1518870056518	addons.webextension.helper-sig@savefrom.net	WARN	Please specify whether you want browser_style or not in your browser_action options.
+Feb 17, 2018 18:24:35.79 Promise rejected after context unloaded: Message manager disconnected
+Feb 17, 2018 18:25:05.50 Unable to read VR Path Registry from C:\Users\Naveen\AppData\Local\openvr\openvrpaths.vrpath
+Feb 17, 2018 18:25:05.51 [Parent 12668] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Feb 17, 2018 18:25:05.52 Unable to read VR Path Registry from C:\Users\Naveen\AppData\Local\openvr\openvrpaths.vrpath
+Feb 17, 2018 18:25:05.53 [Child 6292] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Feb 17, 2018 18:25:05.53 [Child 6292] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Feb 17, 2018 18:25:35.53 Extension error: TypeError: tablist.edit(...).rdrcts is null moz-extension://326216da-bc27-4613-bf45-f17b384dfef1/js/state.js 216
+Feb 17, 2018 18:25:35.54 [[Exception stack
+Feb 17, 2018 18:25:35.54 State/<@moz-extension://326216da-bc27-4613-bf45-f17b384dfef1/js/state.js:216:35
+Feb 17, 2018 18:25:35.55 Current stack
+Feb 17, 2018 18:25:35.55 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Feb 17, 2018 18:25:35.56 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Feb 17, 2018 18:25:35.56 fire@resource://gre/modules/ExtensionChild.jsm:771:71
+Feb 17, 2018 18:25:35.58 receiveMessage@resource://gre/modules/ExtensionChild.jsm:773:76
+Feb 17, 2018 18:25:35.59 _callHandlers/<@resource://gre/modules/MessageChannel.jsm:587:17
+Feb 17, 2018 18:25:35.59 _callHandlers@resource://gre/modules/MessageChannel.jsm:586:14
+Feb 17, 2018 18:25:35.60 _handleMessage/deferred.promise<@resource://gre/modules/MessageChannel.jsm:651:7
+Feb 17, 2018 18:25:35.60 _handleMessage@resource://gre/modules/MessageChannel.jsm:648:24
+Feb 17, 2018 18:25:35.61 receiveMessage@resource://gre/modules/MessageChannel.jsm:163:5
+Feb 17, 2018 18:25:35.61 ]]
+Feb 17, 2018 18:26:26.09 [Parent 12668] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Feb 17, 2018 18:26:26.09 Unable to read VR Path Registry from C:\Users\Naveen\AppData\Local\openvr\openvrpaths.vrpath
+Feb 17, 2018 18:26:26.10 [Child 10360] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346

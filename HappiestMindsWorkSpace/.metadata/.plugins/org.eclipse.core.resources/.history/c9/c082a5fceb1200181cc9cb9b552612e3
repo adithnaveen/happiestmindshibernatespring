@@ -1,0 +1,10 @@
+package com.hm.annotations;
+
+import javax.persistence.Entity;
+
+@Entity
+public class PersonDetails {
+	private int perDetId; 
+	private String pinCode; 
+	private String job; 
+}

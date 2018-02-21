@@ -1,0 +1,12 @@
+1518681100835	Rename resource 'Employee.hbml.xml'
+1518690601495	Move compilation unit
+1518694107225	Extract method 'criteriaWork'
+1518695340618	Extract method 'scalarQuery'
+1518695937288	Copy file
+1518757405083	Copy file
+1518758800098	Copy file
+1518760136134	Copy file
+1518767294655	Copy compilation units
+1518767623890	Encapsulate field 'university'
+1518773814900	Encapsulate field 'taskName'
+1518773885264	Encapsulate field 'modName'

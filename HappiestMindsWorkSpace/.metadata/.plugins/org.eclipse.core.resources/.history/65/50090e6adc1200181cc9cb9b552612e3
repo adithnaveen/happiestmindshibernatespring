@@ -1,0 +1,8 @@
+package com.hm.association;
+
+public class College {
+	private int collegeId; 
+	private String collegeName; 
+	private String collegeCity; 
+	
+}

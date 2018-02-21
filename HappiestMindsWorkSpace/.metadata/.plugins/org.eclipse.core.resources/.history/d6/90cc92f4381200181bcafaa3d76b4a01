@@ -1,0 +1,10 @@
+package com.hm.hibernate.util;
+
+import org.hibernate.SessionFactory;
+
+public class HibernateUtil {
+
+	static SessionFactory sessionFactory = null; 
+	
+	
+}

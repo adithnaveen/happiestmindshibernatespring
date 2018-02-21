@@ -1,0 +1,8 @@
+package com.hm.db;
+
+public class Student {
+	private int studentId; 
+	private String studentName; 
+	private int age; 
+	
+}

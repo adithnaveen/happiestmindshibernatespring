@@ -1,0 +1,9 @@
+package com.hm.autowire;
+
+public class Screen {
+	private String glassType; 
+	private int length; 
+	private int breadth; 
+	
+	
+}

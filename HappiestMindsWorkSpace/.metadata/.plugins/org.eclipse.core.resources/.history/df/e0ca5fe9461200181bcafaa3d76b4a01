@@ -1,0 +1,7 @@
+package com.hm.inheritence;
+
+public class Mobile {
+	private String type; // smart or featured 
+	private String os;   // android, windows, apple 
+	private String connectivity; // gsm, cdma 
+}

@@ -1,0 +1,19 @@
+package com.hm.bl;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.hm.beans.Employee;
+import com.hm.hibernate.util.HibernateUtil;
+
+public class CriteriaImpl {
+	public static void main(String[] args) {
+		SessionFactory sessionFactory = HibernateUtil.getFactory();
+		
+		Session session = sessionFactory.openSession(); 
+		
+		Criteria criteria = session.createCriteria(Employee.class);
+		
+	}
+}

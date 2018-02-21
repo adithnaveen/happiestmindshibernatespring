@@ -1,0 +1,11 @@
+package com.hm.aop;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class LoggingAspect {
+	
+	public void logginBeforeAspect(){
+		System.out.println("Logging Aspect before Called>>>>>");
+	}
+}

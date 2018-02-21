@@ -1,0 +1,16 @@
+package com.hm.basics;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class AppClient {
+	public static void main(String[] args) {
+		// this holds the reference to the spring container 
+		ApplicationContext context = new 
+			ClassPathXmlApplicationContext("ApplicationContext01.xml");
+		
+		IHelloService helloSerivice = (IHelloService) context.getBean("hello");
+		
+		helloSerivice.sayHello();
+	}
+}

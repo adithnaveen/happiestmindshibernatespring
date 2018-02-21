@@ -1,0 +1,13 @@
+package com.hm.inheritence;
+
+import org.hibernate.SessionFactory;
+
+import com.hm.hibernate.util.HibernateUtil;
+
+public class InheClient {
+	public static void main(String[] args) {
+		SessionFactory sessionFactory = HibernateUtil.getFactory(); 
+		
+		
+	}
+}

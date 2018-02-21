@@ -1,0 +1,8 @@
+package com.hm.autowire;
+
+public class Speaker {
+	private String type; 
+	private int volLevels; 
+	
+	
+}

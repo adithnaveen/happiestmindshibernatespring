@@ -1,0 +1,6 @@
+package com.hm.annotations;
+
+public class Person {
+	private int pId; 
+	priavet String pName; 
+}

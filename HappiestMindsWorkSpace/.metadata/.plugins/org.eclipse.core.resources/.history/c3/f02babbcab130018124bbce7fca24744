@@ -1,0 +1,8 @@
+package com.hm.collections;
+
+public class QuestionBank {
+	private String quesion; 
+	private List<String> options; 
+	
+	
+}

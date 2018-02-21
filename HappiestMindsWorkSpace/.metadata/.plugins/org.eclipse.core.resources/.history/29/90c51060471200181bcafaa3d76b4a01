@@ -1,0 +1,9 @@
+package com.hm.inheritence;
+
+public class Television extends Product {
+	private int size;  /// inches 
+	private String screenType; // led, lcd, crt 
+	private String resolution;  // 1024x846
+	
+	
+}

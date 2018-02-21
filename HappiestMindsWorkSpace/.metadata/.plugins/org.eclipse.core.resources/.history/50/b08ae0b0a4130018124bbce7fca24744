@@ -1,0 +1,21 @@
+package com.hm.autowire;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Client {
+	public static void main(String[] args) {
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext
+					("ApplicationContext2.xml", "ApplicationContext3.xml"); 
+		
+		
+		Mobile mobile = context.getBean("mobile", Mobile.class);
+		
+		System.out.println("Camera :" + mobile.getCamera().getType() 
+				+", pixel : " + mobile.getCamera().getmPixel() );
+		
+		System.out.println("Screen : " + mobile.getScreen().getGlassType());
+		System.out.println("Speaker " + mobile.getSpeaker().getType());
+	}
+}

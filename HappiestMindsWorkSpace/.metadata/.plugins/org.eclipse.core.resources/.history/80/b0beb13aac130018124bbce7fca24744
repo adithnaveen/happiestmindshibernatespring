@@ -1,0 +1,10 @@
+package com.hm.collections;
+
+import java.util.List;
+import java.util.Set;
+
+public class MyCollection {
+	List<QuestionBank> questionBank; 
+	Set<AddressSet> addressSet; 
+	
+}

@@ -1,0 +1,17 @@
+package com.hm.client;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.hm.service.BankingService;
+
+public class AppClient {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("AopContext.xml");
+		
+		
+		BankingService service = (BankingService) context.getBean("banking");
+
+		System.out.println(service.getCaAccount());
+	}
+}

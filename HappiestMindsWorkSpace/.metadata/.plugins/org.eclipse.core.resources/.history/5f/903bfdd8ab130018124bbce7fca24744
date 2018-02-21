@@ -1,0 +1,6 @@
+package com.hm.collections;
+
+public class AddressSet {
+	private Set<String> addressSet; 
+	
+}

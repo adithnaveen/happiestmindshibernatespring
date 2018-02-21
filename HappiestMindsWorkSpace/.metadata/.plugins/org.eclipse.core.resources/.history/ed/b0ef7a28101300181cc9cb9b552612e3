@@ -1,0 +1,9 @@
+package com.hm.basics;
+
+class Delete{}
+public class Dummy {
+	public static void main(String[] args) {
+		Delete d = new Delete(); 
+		
+	}
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hm.inheritence.Product" table="Product">
+		<id name="productId" type="int" column="product_id">
+			<generator class="assigned" />
+		</id>
+		<discriminator column="product_type" type="string" length="15" />
+		<property name="productName" column="product_name" type="string" />
+		<property name="productDesc" column="product_desc" type="string" />
+		<property name="productPrice" column="product_price" type="double" />
+
+	
+		<subclass name="com.hm.inheritence.Mobile" discriminator-value="mobile">
+			<property name="type" type="string" />
+			<property name="os"/>
+			<property name="connectivity" type="string" length="20" />
+		</subclass>
+		
+
+
+	</class>
+
+</hibernate-mapping>

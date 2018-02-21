@@ -1,0 +1,104 @@
+package com.hm.beans;
+
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+public class EmployeeCRUD {
+
+	private static SessionFactory sessionFactory; 
+	
+	
+	public static void main(String[] args) {
+
+		// by default hibernate will look for hibernate.cfg.xml 
+		Configuration config = new Configuration().configure();
+		
+		StandardServiceRegistryBuilder builder = 
+				new StandardServiceRegistryBuilder().applySettings(config.getProperties());
+		
+		sessionFactory = config.buildSessionFactory(builder.build());
+		
+		EmployeeCRUD crud = new EmployeeCRUD(); 
+
+// 		Employee emp = new Employee(104,"sandeep", "sandeep@hm.com", 36000); 
+//		Integer empId = crud.insertEmployee(emp); 
+//		System.out.println("Employee Id Created is " + empId);
+		
+		
+		Employee emp = crud.getEmployee(110); 
+		System.out.println("Emp Details \n" + emp);
+	}
+	
+	
+	
+	public Integer insertEmployee(Employee emp){
+		
+		// create a new session 
+		Session session= sessionFactory.openSession(); 
+		Transaction transaction = null; 
+		
+		// the start of transaction 
+		transaction = session.beginTransaction(); 
+		
+		// save method will not persist in to the DB 
+		// it will only make the emp object from transient to persistence 
+		Integer empId=null;
+		try {
+			empId = (Integer) session.save(emp);
+			transaction.commit();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			transaction.rollback();
+		} 
+		
+		return empId; 
+	}
+	
+	
+	
+	public Employee getEmployee(int empId){
+		Session session = sessionFactory.openSession(); 
+		session.beginTransaction(); 
+		
+//		Employee emp = (Employee) session.get(Employee.class, empId);
+		
+		// load method serializes the object 
+		Employee emp = (Employee) session.load(Employee.class, empId);
+		
+		return emp; 
+	}
+	
+	
+	public void getAllEmployees(){
+		Session session = sessionFactory.openSession(); 
+		
+		session.beginTransaction();
+		
+		// syntax for CreateQuery is from HQL 
+		List<Employee> employeeList = session.createQuery("from com.hm.beans.Employee")
+						.list(); 
+		
+		for(Employee temp : employeeList){
+			
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

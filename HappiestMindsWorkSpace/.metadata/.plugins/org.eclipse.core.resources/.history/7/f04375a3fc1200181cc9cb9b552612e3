@@ -1,0 +1,10 @@
+package com.hm.annotations.inheritence;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Project {
+	private int proId; 
+	private String proName; 
+	
+}

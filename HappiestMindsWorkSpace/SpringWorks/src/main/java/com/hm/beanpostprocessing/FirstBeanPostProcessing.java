@@ -1,0 +1,28 @@
+package com.hm.beanpostprocessing;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+import com.hm.basics.Employee;
+
+public class FirstBeanPostProcessing implements BeanPostProcessor {
+
+	public Object postProcessAfterInitialization(Object arg0, String arg1) throws BeansException {
+		// TODO Auto-generated method stub
+		System.out.println("BeanInitializationAfter  Name : " + arg1);
+		return arg0;
+	}
+
+	public Object postProcessBeforeInitialization(Object arg0, String arg1) throws BeansException {
+		System.out.println("BeanInitializationBefore Name : " + arg1);
+		
+		if(arg0 instanceof Employee){
+			Employee temp = (Employee) arg0; 
+			temp.setEmpName(temp.getEmpName().toUpperCase());
+			return temp;
+		}
+		
+		return arg0;
+	}
+	
+}

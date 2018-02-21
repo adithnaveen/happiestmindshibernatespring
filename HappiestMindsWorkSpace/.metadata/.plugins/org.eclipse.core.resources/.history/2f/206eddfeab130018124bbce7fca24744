@@ -1,0 +1,7 @@
+package com.hm.collections;
+
+public class AccountMap {
+	private Map<String, Long> accountMap; 
+	
+	
+}

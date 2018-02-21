@@ -1,0 +1,12 @@
+package com.hm.annotations;
+
+public class Customer {
+	private int custId; 
+	private String custName; 
+	private double custIncome; 
+	private String email; 
+	private String insured; 
+	private boolean isAlive; 
+	
+	
+}

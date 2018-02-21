@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.hm.association.University" table="University">
+	<id name="uid" type="int" column="uid">
+		<generator class="native"/>
+	</id>
+	
+	<property name="name"  />
+	<property name="state" />
+
+	<list name="colleges" cascade="all">
+		<key column="uid"/>
+		<list-index column="idx"/>
+		<one-to-many class="com.hm.association.College"/>
+	</list>
+	
+	</class>
+
+
+	<class name="com.hm.association.College" table="college">
+		
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,32 @@
+package com.hm.annotations;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.hm.hibernate.util.HibernateUtil;
+
+public class PersonOneToOneClient {
+	static SessionFactory sessionFactory; 
+	public static void main(String[] args) {
+		sessionFactory = HibernateUtil.getFactoryAnnotation(Person.class, PersonDetails.class);
+		
+		Session session = sessionFactory.openSession(); 
+		
+		session.beginTransaction(); 
+		
+		PersonDetails pDetails = new PersonDetails();
+		pDetails.setJob("Engineer");
+		pDetails.setPinCode("560001");
+		
+		Person person = new Person(); 
+		person.setpName("Rajat");
+		person.setpDetail(pDetails);
+		
+		session.save(person);
+		session.getTransaction().commit();
+		
+		System.out.println("Person Object Saved... ");
+		
+		
+	}
+}

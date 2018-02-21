@@ -1,0 +1,18 @@
+package com.hm.basics;
+
+class Delete{
+
+	@Override
+	protected void finalize() throws Throwable {
+		System.out.println("This will be the last method to be called.. ");
+	}
+	
+	
+}
+public class Dummy {
+	public static void main(String[] args) {
+		Runtime.runFinalizersOnExit(true);
+		Delete d = new Delete(); 
+		
+	}
+}

@@ -1,0 +1,22 @@
+package com.hm.annotations;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.hm.hibernate.util.HibernateUtil;
+
+public class CustomerClient {
+	static SessionFactory sessionFactory; 
+	public static void main(String[] args) {
+		sessionFactory = HibernateUtil.getFactoryAnnotation(Customer.class); 
+		
+		Session session = sessionFactory.openSession(); 
+		session.beginTransaction(); 
+		
+		{
+			
+		}
+		
+		
+	}
+}

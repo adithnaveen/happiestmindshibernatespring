@@ -1,0 +1,6 @@
+package com.hm.autowire;
+
+public class Camera {
+	private String type; 
+	private int mPixel; 
+}

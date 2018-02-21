@@ -1,0 +1,8 @@
+package com.hm.db;
+
+import javax.sql.DataSource;
+
+public class StudentDAO {
+	private DataSource dataSource;
+	
+}

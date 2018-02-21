@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-init-method="init1" default-destroy-method="destroy1">
+
+	<bean id="hello" class="com.hm.basics.DefaultHello" scope="singleton">
+		<property name="name" value="Scott" />
+		<property name="city" value="Reston" />
+	</bean>
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>employee.properties</value>
+		</property>
+	</bean>
+
+	<bean id="emp" class="com.hm.basics.Employee">
+		<property name="empId" value="${employee.empid}"/>
+		<property name="empName" value="${employee.empname}"/>
+		<property name="empSal" value="${employee.empsal}"/>
+	</bean>
+
+
+	<bean id="emp1" class="com.hm.basics.Employee">
+		<constructor-arg name="empId" value="${employee.empid}" />
+		<constructor-arg name="empName" value="${employee.empname}"/>
+		<constructor-arg name="empSal" value="${employee.empsal}"/>
+	</bean>
+
+	<!--  bean post processor 
+	<bean class="com.hm.beanpostprocessing.FirstBeanPostProcessing"/>-->
+
+
+
+
+
+
+
+
+
+
+
+</beans>

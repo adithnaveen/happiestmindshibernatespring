@@ -1,0 +1,19 @@
+package com.hm.db;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class DBClient {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext3.xml");
+		
+		IStudentDAO dao = context.getBean("studentDao", IStudentDAO.class);
+		
+		
+		// insert 
+		Student student1 = new Student(); 
+		student1.setStudentId(101);
+		student1.setStudentName("Harry");
+		student1.setAge(23);;
+	}
+}

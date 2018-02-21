@@ -1,0 +1,36 @@
+package com.hm.association;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.hm.hibernate.util.HibernateUtil;
+
+public class OneToManyImpl {
+	static SessionFactory sessionFactory; 
+	public static void main(String[] args) {
+		OneToManyImpl otm = new OneToManyImpl(); 
+		
+		sessionFactory = HibernateUtil.getFactory();
+		
+	}
+	
+	
+	public integer insert(University university){
+		Session session = sessionFactory.openSession(); 
+		Integer universityId = null;
+		
+		session.beginTransaction(); 
+		
+		universityId = (Integer) session.save(university);
+		session.getTransaction().commit(); 
+		return universityId; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,10 @@
+package com.hm.annotations;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Person {
+	private int pId; 
+	private String pName; 
+	private PersonDetails pDetail; 
+}

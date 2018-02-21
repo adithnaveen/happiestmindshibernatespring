@@ -1,0 +1,5 @@
+package com.hm.annotations.inheritence;
+
+public class Task extends Project{
+	
+}

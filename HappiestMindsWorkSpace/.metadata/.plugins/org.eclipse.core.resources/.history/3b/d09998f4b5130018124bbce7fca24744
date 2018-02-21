@@ -1,0 +1,42 @@
+package com.hm.db;
+
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class StudentDAO implements IStudentDAO{
+	private DataSource dataSource;
+	private JdbcTemplate jdbcTemplateObject;
+	
+	
+	public void create(Student student) {
+		String sql="insert into student(studentid, studentname, age) values( ?,?,?)";
+		jdbcTemplateObject.update(sql, student.getStudentId(), student.getStudentName(), student.getAge());
+	}
+	public Student getStudent(int studentId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public List<Student> listStudent() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void delete(int studentId) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void update(int studentId, int age) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setDataSource(DataSource dataSource) {
+			// the datasource information will be given via 
+		// applicationcontext.xml 
+			this.dataSource = dataSource; 
+			jdbcTemplateObject = new JdbcTemplate(dataSource);
+	} 
+	
+	
+}

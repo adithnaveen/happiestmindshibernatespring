@@ -1,0 +1,8 @@
+package com.hm.association;
+
+public class University {
+	private int uid; 
+	private String name; 
+	private String state; 
+	// list of college 
+}

@@ -1,0 +1,7 @@
+package com.hm.db;
+
+import org.springframework.jdbc.core.RowMapper;
+
+public class StudentMapper implements RowMapper<StudentMapper>{
+	
+}

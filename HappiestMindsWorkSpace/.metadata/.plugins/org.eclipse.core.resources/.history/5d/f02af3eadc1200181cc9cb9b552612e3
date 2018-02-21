@@ -1,0 +1,21 @@
+package com.hm.association;
+
+import java.util.List;
+
+public class University {
+	private int uid; 
+	private String name; 
+	private String state; 
+	private List<College> colleges;
+	
+
+	public University(){}
+	public University(String name, String state, List<College> colleges) {
+		super();
+		this.name = name;
+		this.state = state;
+		this.colleges = colleges;
+	}
+	
+	
+}

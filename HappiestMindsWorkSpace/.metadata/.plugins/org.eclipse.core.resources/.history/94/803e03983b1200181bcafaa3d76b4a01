@@ -1,0 +1,14 @@
+package com.hm.bl;
+
+import org.hibernate.SessionFactory;
+
+import com.hm.hibernate.util.HibernateUtil;
+
+public class CriteriaImpl {
+	public static void main(String[] args) {
+		SessionFactory sessionFactory = HibernateUtil.getFactory();
+		
+		
+		
+	}
+}

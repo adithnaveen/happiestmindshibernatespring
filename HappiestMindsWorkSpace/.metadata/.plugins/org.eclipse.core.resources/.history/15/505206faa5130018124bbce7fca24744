@@ -1,0 +1,24 @@
+package com.hm.autowire;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Camera {
+	private String type; 
+	private int mPixel;
+	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public int getmPixel() {
+		return mPixel;
+	}
+	public void setmPixel(int mPixel) {
+		this.mPixel = mPixel;
+	} 
+	
+	
+}

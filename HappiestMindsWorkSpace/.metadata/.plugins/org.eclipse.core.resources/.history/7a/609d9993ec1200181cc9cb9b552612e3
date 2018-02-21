@@ -1,0 +1,12 @@
+package com.hm.annotations;
+
+import org.hibernate.SessionFactory;
+
+import com.hm.hibernate.util.HibernateUtil;
+
+public class PersonOneToOneClient {
+	static SessionFactory sessionFactory; 
+	public static void main(String[] args) {
+		sessionFactory = HibernateUtil.getFactoryAnnotation(Person.class, PersonDetails.class);
+	}
+}

@@ -1,0 +1,48 @@
+package com.hm.association;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.hm.hibernate.util.HibernateUtil;
+
+public class OneToManyImpl {
+	static SessionFactory sessionFactory; 
+	public static void main(String[] args) {
+		OneToManyImpl otm = new OneToManyImpl(); 
+		
+		sessionFactory = HibernateUtil.getFactory();
+		List<College> colleges = new ArrayList<College>();
+		colleges.add(new College("SJRC", "Bengaluru"));
+		colleges.add(new College("PES", "Mysuru"));
+		colleges.add(new College("Manipal", "Mangaluru"));
+		
+		University university = new University("Bengaluru", "Karnatka", colleges);
+		
+		Integer universityId = otm.insert(university); 
+		System.out.println("University Created is " + universityId);
+		
+	}
+	
+	
+	public Integer insert(University university){
+		Session session = sessionFactory.openSession(); 
+		Integer universityId = null;
+		
+		session.beginTransaction(); 
+		
+		universityId = (Integer) session.save(university);
+		session.getTransaction().commit(); 
+		return universityId; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
